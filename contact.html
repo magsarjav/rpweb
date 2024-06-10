@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link rel="shortcut icon" id="favicon" href="pics/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <title>Rentpay</title>
+</head>
+
+
+
+<style>
+    body {
+        /*font-family: -apple-system, BlinkMacSystemFont, sans-serif;*/
+        font-family: 'SF Pro Display', sans-serif;
+    }
+</style>
+
+<body class="text-indigo-950">
+
+    <div class="bg-indigo-50 bg-no-repeat bg-top bg-contain bg-[url('pics/bg_white.svg')]">
+        <div class="max-w-screen-md mx-auto p-5">
+
+            <p class="text-center font-semibold text-4xl sm:text-5xl  pt-10 pb-14">
+                Холбоо барих
+            </p>
+            <div class="grid grid-cols-1 pb-10">
+                <div class="sm:flex bg-white rounded-3xl overflow-hidden">
+                    <img src="pics/contact.jpg" class=" sm:h-full sm:w-60 object-cover" />
+
+                    <div class="p-8 sm:p-10">
+                        <div class="flex space-x-4">
+                            <div class="pt-1">
+                                <svg class="w-8" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="21.2772" cy="21.9389" r="20.0272" stroke="#7B00FF" stroke-width="2.5" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9441 33.0109C20.5768 33.4992 21.4323 33.4992 22.065 33.0109C24.4458 31.1735 30.009 26.0863 30.009 18.6661C30.009 13.6931 25.9776 9.66162 21.0045 9.66162C16.0315 9.66162 12 13.6931 12 18.6661C12 26.0863 17.5632 31.1735 19.9441 33.0109ZM21.0041 22.4423C23.25 22.4423 25.0707 20.6217 25.0707 18.3758C25.0707 16.1299 23.25 14.3092 21.0041 14.3092C18.7582 14.3092 16.9376 16.1299 16.9376 18.3758C16.9376 20.6217 18.7582 22.4423 21.0041 22.4423Z"
+                                        fill="#7B00FF" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-bold text-xl">
+                                    Сити тaуэр: 203 тоот
+                                </p>
+                                <p class="text-lg">
+                                    Сүхбаатар дүүрэг, 8-р хороо, Бага тойруу-1, Сити тaуэр, 2 давхар 
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="flex space-x-4 py-5">
+                            <svg class="w-8" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="21.8319" cy="21.9389" r="20.0272" stroke="#7B00FF" stroke-width="2.5" />
+                                <path d="M21.5547 11.6616V22.6616L28.0547 28.6616" stroke="#7B00FF" stroke-width="4" />
+                            </svg>
+
+
+
+                            <p class="text-xl font-bold place-content-center">
+                                Даваа-Ням: 09:00-18:00
+                            </p>
+                        </div>
+                        <div class="flex space-x-4">
+                            <svg class="w-8" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M21.1693 22.8361C25.8847 27.5502 26.9544 22.0966 29.9567 25.0968C32.8511 27.9904 34.5147 28.5701 30.8475 32.2363C30.3881 32.6055 27.4696 37.0468 17.2128 26.7929C6.95467 16.5376 11.3934 13.6161 11.7627 13.1568C15.4388 9.48049 16.0085 11.1538 18.903 14.0474C21.9053 17.0489 16.4539 18.1221 21.1693 22.8361Z"
+                                    fill="#7B00FF" />
+                                <circle cx="21.3866" cy="21.9389" r="20.0272" stroke="#7B00FF" stroke-width="2.5" />
+                            </svg>
+
+                            <p class="text-xl font-bold place-content-center">
+                                Лавлах: 7272-8000
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-video" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+
+        <div class="relative p-4 w-full max-w-3xl max-h-full">
+
+            <button type="button"
+                class="absolute z-50 top-0 right-0 bg-gray-200 text-gray-900 hover:bg-white rounded-full text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                onclick="modalHide();">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+            </button>
+
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-2xl shadow">
+                <video id="video-tag" class="w-full h-auto max-w-full rounded-xl" controls>
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,940 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link rel="shortcut icon" id="favicon" href="pics/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="multi-animated-counter.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <title>Rentpay</title>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HEQNH18JLQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-HEQNH18JLQ');
+</script>
+
+
+<style>
+    body {
+        /*font-family: -apple-system, BlinkMacSystemFont, sans-serif;*/
+        font-family: 'SF Pro Display', sans-serif;
+    }
+
+    html {
+        scroll-padding-top: 7em;
+        scroll-behavior: smooth;
+    }
+
+
+    .slogan1 .letter {
+        display: inline-block;
+    }
+
+    .slogan2 {
+        animation: newchance 4s;
+    }
+
+
+    @keyframes smooth-appear-bottom-1 {
+        to {
+            bottom: 0;
+            opacity: 1;
+        }
+    }
+
+    @keyframes smooth-appear-bottom-2 {
+        to {
+            bottom: 23%;
+            opacity: 1;
+        }
+    }
+
+
+    @keyframes newchance {
+        0% {
+            opacity: 0;
+        }
+    }
+
+    .anim_a {
+        animation: smooth-appear-bottom-1 1s ease forwards;
+    }
+
+    .anim_b {
+        animation: smooth-appear-bottom-1 1.5s ease forwards;
+    }
+
+    .anim_c {
+        animation: smooth-appear-bottom-2 1.5s ease forwards;
+    }
+</style>
+
+<body class="text-indigo-950">
+
+    <nav class="bg-white md:shadow-md md:backdrop-blur-md md:bg-white/80 border-gray-200 sticky top-0 z-50">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="https://www.rentpay.mn">
+                <img src="pics/logo.svg" class="h-10" alt="RentPay" />
+            </a>
+
+            <div class="flex md:order-2 space-x-3 rtl:space-x-reverse">
+                <a href="help.html"
+                    class="block text-violet-700 border-2 border-violet-700  hover:bg-violet-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-purple-100 font-medium rounded-full px-4 py-2 text-center">
+                    ?
+                </a>
+                <a href="#"
+                    class="block text-white border-2 border-violet-700 bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-purple-100 font-medium rounded-full px-2 lg:px-6 py-2 text-center">
+                    <span class="hidden lg:inline">
+                        Нэвтрэх
+                    </span>
+                    <svg class="w-6 lg:hidden" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.11963 2.21483C0.935059 2.44163 1.00049 2.77244 1.24268 2.93626C1.48486 3.09984 1.81201 3.03416 2.00049 2.81077C2.5835 2.12059 3.34717 1.60081 4.21045 1.31273C5.24219 0.96849 6.3584 0.974105 7.38623 1.3286C8.41406 1.68333 9.29639 2.36693 9.896 3.27367C10.4961 4.18065 10.7803 5.25999 10.7041 6.34471C10.6284 7.42943 10.1968 8.45872 9.47656 9.27342C8.75635 10.0879 7.7876 10.6421 6.72021 10.8501C5.65283 11.0581 4.54688 10.9082 3.57324 10.4238C3.05322 10.165 2.58691 9.81859 2.19238 9.40306C1.96826 9.16722 1.76758 8.90941 1.59326 8.6328C1.4375 8.38524 1.12305 8.27464 0.860352 8.40306C0.597656 8.53148 0.486816 8.84984 0.637695 9.10033C1.2251 10.0727 2.07812 10.8623 3.10156 11.3716C4.28369 11.9597 5.62646 12.1418 6.92236 11.8891C8.21875 11.6367 9.39502 10.9636 10.2695 9.97459C11.144 8.98558 11.668 7.73582 11.7603 6.41869C11.8525 5.10155 11.5073 3.79076 10.7793 2.68968C10.0508 1.58861 8.97949 0.758285 7.73145 0.327865C6.48291 -0.102555 5.12793 -0.109391 3.87549 0.308578C3.15381 0.5493 2.48975 0.923324 1.91504 1.40648C1.62598 1.6494 1.35938 1.91991 1.11963 2.21483ZM5.64697 3.46507C5.55127 3.48778 5.46045 3.53636 5.38623 3.61107C5.33447 3.66283 5.29541 3.7224 5.26855 3.78587C5.2168 3.90819 5.21143 4.04564 5.25244 4.17137C5.27832 4.25096 5.32275 4.32567 5.38623 4.3889L6.44727 5.44994H0.774902C0.471191 5.44994 0.225098 5.69627 0.225098 5.99998C0.225098 6.30369 0.471191 6.55003 0.774902 6.55003H6.44727L5.38623 7.61107C5.28516 7.7119 5.23193 7.84227 5.22559 7.97435C5.21875 8.12352 5.27246 8.27489 5.38623 8.3889C5.60059 8.60374 5.94922 8.60374 6.16357 8.3889L8.16357 6.3889C8.18262 6.36986 8.2002 6.34959 8.21582 6.32835C8.28271 6.23924 8.31787 6.13499 8.32373 6.02904L8.32471 5.99998C8.32471 5.91771 8.30664 5.83543 8.27002 5.75975C8.24365 5.70604 8.20801 5.65575 8.16357 5.61107L8.15674 5.60399L6.16357 3.61107C6.02344 3.47093 5.82666 3.4221 5.64697 3.46507Z"
+                            fill="white" />
+                    </svg>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
+                    <li>
+                        <a href="owner.html"
+                            class="block py-2 px-2 text-gray-500 hover:bg-gray-100 hover:text-violet-700 rounded md:hover:bg-transparent">
+                            Түрээслүүлэгч
+                        </a>
+                    </li>
+                    <li>
+                        <a href="buyer.html"
+                            class="block py-2 px-2 text-gray-500 hover:bg-gray-100 hover:text-violet-700 rounded md:hover:bg-transparent">
+                            Түрээслэгч
+                        </a>
+                    </li>
+                    <li>
+                        <a data-dropdown-toggle="dropdownNavbar" data-dropdown-offset-distance="27"
+                            data-dropdown-offset-skidding="0"
+                            class="cursor-pointer flex items-center justify-between w-full py-2 px-2 text-gray-500 hover:bg-gray-100 hover:text-violet-700 rounded md:hover:bg-transparent">
+                            Бид
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar" class="z-10 hidden bg-white rounded-lg shadow w-56">
+                            <ul class="my-2 px-2">
+                                <li>
+                                    <a href="about.html"
+                                        class="block px-6 py-3 text-gray-500 hover:text-violet-700 rounded hover:bg-gray-100">
+                                        Бидний тухай
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="career.html"
+                                        class="block px-6 py-3 text-gray-500 hover:text-violet-700 rounded hover:bg-gray-100">
+                                        Хүний нөөц
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="news.html"
+                                        class="block px-6 py-3 text-gray-500 hover:text-violet-700 rounded hover:bg-gray-100">
+                                        Блог & Мэдээ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html"
+                                        class="block px-6 py-3 text-gray-500 hover:text-violet-700 rounded hover:bg-gray-100">
+                                        Холбоо барих
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://rentpay.bizpro.mn"
+                            class="block py-2 px-2 text-gray-500 hover:bg-gray-100 hover:text-violet-700 rounded md:hover:bg-transparent"
+                            aria-current="page">
+                            Байр хайх
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="hidden sm:block bg-gradient-to-tr from-40% from-purple-950 to-violet-700">
+
+        <div class="sm:aspect-[1.6/1] relative overflow-hidden max-w-screen-xl mx-auto sm:p-5">
+            <div class=" absolute hidden sm:block left-5 top-[23%]">
+                <div class="slogan1 relative">
+                    <p
+                        class="uppercase text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold letters">
+                        Түрээсийн
+                    </p>
+                </div>
+                <div class="slogan2 relative">
+                    <p class="md:py-2">
+                        <span
+                            class="letters px-2 rounded-lg text-white uppercase sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold bg-gradient-to-r to-rose-400 from-violet-700">
+                            шинэ боломж
+                        </span>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="absolute left-5 anim_c sm:bottom-[10%] sm:opacity-0">
+                <div class="flex space-x-8">
+                    <img src="pics/barcode.svg" class="w-44 lg:w-52 hidden lg:block " />
+                    <div class="place-content-center">
+                        <div class="w-44">
+                            <a href="#" class="flex space-x-1 rounded-xl hover:bg-white/70 px-4 py-3 bg-white/25">
+                                <svg class="h-6 w-6" viewBox="0 0 27 33" fill="white"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.3696 5.22937C18.9785 4.5275 19.4429 3.71225 19.7359 2.83042C20.0289 1.9486 20.1448 1.01759 20.077 0.0908318C18.2075 0.241745 16.472 1.12105 15.2446 2.53929C14.6568 3.21902 14.2113 4.00978 13.9347 4.86475C13.658 5.71972 13.5556 6.62152 13.6337 7.51675C14.5457 7.52434 15.4472 7.32199 16.2684 6.92534C17.0896 6.5287 17.8086 5.9484 18.3696 5.22937ZM22.4289 17.2139C22.4397 15.9796 22.7648 14.7684 23.3736 13.6946C23.9823 12.6208 24.8547 11.7198 25.9082 11.0767C25.2433 10.1186 24.3643 9.32866 23.341 8.76944C22.3176 8.21023 21.178 7.89715 20.0126 7.85502C17.4997 7.59729 15.1801 9.32087 13.8431 9.32087C12.5062 9.32087 10.6215 7.88724 8.52741 7.91945C7.15842 7.96455 5.82448 8.36369 4.6557 9.07794C3.48693 9.79219 2.52323 10.7972 1.85859 11.9948C-0.976468 16.924 1.13372 24.2532 3.96877 28.232C5.25743 30.1811 6.86826 32.3879 8.99455 32.3074C11.1208 32.2268 11.8135 30.9865 14.2781 30.9865C16.7426 30.9865 17.4997 32.3074 19.5938 32.259C21.6879 32.2107 23.1698 30.2616 24.5229 28.3125C25.4814 26.8975 26.2302 25.3512 26.7459 23.7217C25.4693 23.1772 24.3801 22.2708 23.6129 21.1142C22.8457 19.9577 22.434 18.6018 22.4289 17.2139Z" />
+                                </svg>
+                                <span class="text-lg md:text-xl text-white">App Store</span>
+                            </a>
+                        </div>
+                        <div class="w-44 pt-5">
+                            <a href="#" class="flex space-x-1 rounded-xl hover:bg-white/70 px-4 py-3 bg-white/25">
+                                <svg class="h-6 w-6" viewBox="0 0 29 32" fill="white"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.782227 1.74607V30.6517L15.235 16.1989L0.782227 1.74607ZM2.09467 31.9021C2.27397 31.8869 2.44805 31.832 2.60404 31.7408L20.5211 21.485L16.5164 17.4803L2.09467 31.9021ZM22.1226 20.5683L27.9499 17.2327C28.137 17.1326 28.2934 16.9835 28.4024 16.8015C28.5114 16.6195 28.569 16.4113 28.569 16.1991C28.569 15.9869 28.5114 15.7787 28.4024 15.5967C28.2934 15.4147 28.137 15.2657 27.9499 15.1655L22.1224 11.8298C22.0833 11.8979 22.0347 11.962 21.9765 12.0202L17.7979 16.1989L21.9767 20.3777C22.0349 20.4359 22.0836 20.5001 22.1226 20.5683ZM20.5208 10.9131L16.5164 14.9175L2.09519 0.496216C2.2743 0.5114 2.4482 0.566316 2.60404 0.657427L20.5208 10.9131Z"
+                                        fill="white" />
+                                </svg>
+                                <span class="text-lg md:text-xl text-white">Google Play</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <img src="pics/app_a.png"
+                class="anim_a hidden sm:block opacity-0 absolute right-[20%] -bottom-[30%] w-64 lg:w-80 xl:w-96" />
+            <img src="pics/app_b.png"
+                class="anim_b hidden sm:block absolute right-5 -bottom-[30%] w-64 lg:w-80 xl:w-96" />
+
+        </div>
+
+    </div>
+
+    <div class="relative sm:hidden">
+        <img src="pics/slide1_m.png" class="w-full sm:hidden" />
+        <div class="absolute flex space-x-6 bottom-[55%] justify-center w-full">
+            <div class="">
+                <a href="#" class="flex space-x-1 rounded-xl hover:bg-white/70 px-5 py-3 bg-white/25">
+                    <svg class="h-6 w-6" viewBox="0 0 27 33" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.3696 5.22937C18.9785 4.5275 19.4429 3.71225 19.7359 2.83042C20.0289 1.9486 20.1448 1.01759 20.077 0.0908318C18.2075 0.241745 16.472 1.12105 15.2446 2.53929C14.6568 3.21902 14.2113 4.00978 13.9347 4.86475C13.658 5.71972 13.5556 6.62152 13.6337 7.51675C14.5457 7.52434 15.4472 7.32199 16.2684 6.92534C17.0896 6.5287 17.8086 5.9484 18.3696 5.22937ZM22.4289 17.2139C22.4397 15.9796 22.7648 14.7684 23.3736 13.6946C23.9823 12.6208 24.8547 11.7198 25.9082 11.0767C25.2433 10.1186 24.3643 9.32866 23.341 8.76944C22.3176 8.21023 21.178 7.89715 20.0126 7.85502C17.4997 7.59729 15.1801 9.32087 13.8431 9.32087C12.5062 9.32087 10.6215 7.88724 8.52741 7.91945C7.15842 7.96455 5.82448 8.36369 4.6557 9.07794C3.48693 9.79219 2.52323 10.7972 1.85859 11.9948C-0.976468 16.924 1.13372 24.2532 3.96877 28.232C5.25743 30.1811 6.86826 32.3879 8.99455 32.3074C11.1208 32.2268 11.8135 30.9865 14.2781 30.9865C16.7426 30.9865 17.4997 32.3074 19.5938 32.259C21.6879 32.2107 23.1698 30.2616 24.5229 28.3125C25.4814 26.8975 26.2302 25.3512 26.7459 23.7217C25.4693 23.1772 24.3801 22.2708 23.6129 21.1142C22.8457 19.9577 22.434 18.6018 22.4289 17.2139Z" />
+                    </svg>
+                    <span class="text-lg md:text-xl text-white">App Store</span>
+                </a>
+            </div>
+            <div class="">
+                <a href="#" class="flex space-x-1 rounded-xl hover:bg-white/70 px-4 py-3 bg-white/25">
+                    <svg class="h-6 w-6" viewBox="0 0 29 32" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.782227 1.74607V30.6517L15.235 16.1989L0.782227 1.74607ZM2.09467 31.9021C2.27397 31.8869 2.44805 31.832 2.60404 31.7408L20.5211 21.485L16.5164 17.4803L2.09467 31.9021ZM22.1226 20.5683L27.9499 17.2327C28.137 17.1326 28.2934 16.9835 28.4024 16.8015C28.5114 16.6195 28.569 16.4113 28.569 16.1991C28.569 15.9869 28.5114 15.7787 28.4024 15.5967C28.2934 15.4147 28.137 15.2657 27.9499 15.1655L22.1224 11.8298C22.0833 11.8979 22.0347 11.962 21.9765 12.0202L17.7979 16.1989L21.9767 20.3777C22.0349 20.4359 22.0836 20.5001 22.1226 20.5683ZM20.5208 10.9131L16.5164 14.9175L2.09519 0.496216C2.2743 0.5114 2.4482 0.566316 2.60404 0.657427L20.5208 10.9131Z"
+                            fill="white" />
+                    </svg>
+                    <span class="text-lg md:text-xl text-white">Google Play</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="bg-no-repeat bg-contain bg-bottom bg-[url('pics/bg_de.svg')]">
+        <div class="max-w-screen-xl mx-auto p-5 pb-10">
+            <div class="grid grid-cols-1">
+                <div class=" items-center relative py-10 lg:py-14">
+                    <div class="flex justify-center lg:flex-none lg:justify-start">
+                        <video id="vid1" class="w-full lg:w-2/3" autoplay muted playsinline>
+                            <source src="pics/furn1.mp4" type="video/mp4">
+                        </video>
+                        <video id="vid2" class="hidden w-full lg:w-2/3" playsinline muted>
+                            <source src="pics/furn2.mp4" type="video/mp4">
+                        </video>
+                        <video id="vid3" class="hidden w-full lg:w-2/3" playsinline muted>
+                            <source src="pics/furn3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="lg:absolute lg:text-left text-center transform top-1/3 end-20 px-2 py-3 font-semibold">
+                        <p class="text-4xl lg:text-5xl uppercase mb-1 lg:mb-2">Байраа сонго</p>
+                        <p class="text-4xl lg:text-5xl uppercase mb-1 lg:mb-2">Сар сардаа</p>
+                        <p class="text-4xl lg:text-5xl uppercase mb-2 lg:mb-6">төл</p>
+                        <a href="http://rentpay.bizpro.mn"
+                            class="flex justify-center lg:justify-start space-x-2 text-lg underline text-violet-700">
+                            <span>Байр үзэх</span>
+                            <img src="pics/arrow.gif" class="w-10" />
+
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-no-repeat bg-cover bg-center bg-[url('pics/bg_1_2.svg')]">
+        <div class="max-w-screen-xl mx-auto px-5 py-8">
+            <div class="grid grid-cols-1">
+                <div class="pb-10 items-center relative">
+                    <video id="introVid" class="w-full h-auto max-w-full rounded-3xl" autoplay>
+                        <source src="pics/youtube.mp4" type="video/mp4">
+                    </video>
+                    <button id="playButton" onclick="playVid();"
+                        class="absolute animate-pulse text-center left-1/2 transform -translate-x-1/2 bottom-2 md:bottom-20 rounded-full bg-white text-center w-14 h-14 font-semibold text-indigo-800 ring-8 ring-gray-200/50 hover:ring-indigo-300">
+                        Play
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-no-repeat bg-contain bg-center bg-[url('pics/app_bg.svg')]">
+        <div class="max-w-screen-xl mx-auto p-5">
+            <p class="text-center font-semibold pb-10 md:pb-16 text-4xl md:text-5xl">
+                Бидний үйлчилгээ
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-10">
+
+                <!--Usuhuu hiine-->
+                <div class="rounded-[1.5em] border border-gray shadow backdrop-blur-md bg-white/10 p-10  ">
+                    <div class="flex justify-center pb-10">
+                        <svg class="h-20" width="101" height="100" viewBox="0 0 101 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50.6708" cy="50.0834" r="49.7648" fill="#7B00FF"></circle>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M38.5754 58.7296C38.2975 55.9946 38.1497 53.1273 38.1497 50.1725C38.1497 47.2178 38.2975 44.3505 38.5754 41.6155H22.2858C21.4726 44.3253 21.0356 47.1979 21.0356 50.1725C21.0356 53.1471 21.4726 56.0197 22.2858 58.7296H38.5754ZM39.1682 63.2333H24.0514C28.0047 71.3025 35.5071 77.3167 44.5242 79.2417C42.1399 75.4771 40.2525 69.8824 39.1682 63.2333ZM43.7355 63.2333H59.5861C58.954 66.8523 58.0742 70.0651 57.0254 72.7219C55.9254 75.5087 54.7274 77.4593 53.6274 78.638C52.7574 79.5701 52.157 79.8159 51.8445 79.8775C51.7407 79.8812 51.6368 79.8844 51.5328 79.8871C51.2391 79.8442 50.6189 79.6289 49.6942 78.638C48.5942 77.4593 47.3962 75.5087 46.2961 72.7219C45.2474 70.0651 44.3676 66.8523 43.7355 63.2333ZM60.218 58.7296H43.1036C42.8121 56.0259 42.6534 53.1572 42.6534 50.1725C42.6534 47.1879 42.8121 44.3192 43.1036 41.6155H60.218C60.5095 44.3192 60.6682 47.1879 60.6682 50.1725C60.6682 53.1572 60.5095 56.0259 60.218 58.7296ZM64.1534 63.2333C63.1197 69.5722 61.356 74.9527 59.1279 78.7028C67.1896 76.3423 73.8314 70.6576 77.4688 63.2333H64.1534ZM79.2343 58.7296H64.7462C65.0241 55.9946 65.1719 53.1273 65.1719 50.1725C65.1719 47.2178 65.0241 44.3505 64.7462 41.6155H79.2344C80.0476 44.3253 80.4845 47.1979 80.4845 50.1725C80.4845 53.1471 80.0476 56.0197 79.2343 58.7296ZM46.2961 27.6232C45.2474 30.28 44.3676 33.4927 43.7355 37.1118H59.5861C58.954 33.4927 58.0742 30.28 57.0254 27.6232C55.9254 24.8364 54.7274 22.8858 53.6274 21.707C52.7568 20.7742 52.1561 20.5287 51.8437 20.4674C51.7404 20.4637 51.637 20.4605 51.5334 20.4579C51.2401 20.5005 50.6196 20.7155 49.6942 21.707C48.5942 22.8858 47.3962 24.8364 46.2961 27.6232ZM64.1534 37.1118H77.4688C73.8315 29.6874 67.1896 24.0027 59.1278 21.6421C61.356 25.3922 63.1197 30.7728 64.1534 37.1118ZM24.0513 37.1118H39.1682C40.2525 30.4626 42.14 24.8678 44.5243 21.1032C35.5071 23.0282 28.0046 29.0425 24.0513 37.1118ZM51.4051 84.3946C51.4902 84.3986 51.5754 84.4007 51.6608 84.4007C51.8579 84.4007 52.054 84.39 52.249 84.3688C70.4619 83.5893 84.9882 68.5773 84.9882 50.1725C84.9882 31.7671 70.461 16.7548 52.2474 15.9761C52.0529 15.955 51.8573 15.9444 51.6608 15.9444C51.5759 15.9444 51.4912 15.9464 51.4067 15.9503C51.1917 15.9463 50.9761 15.9443 50.7601 15.9443C31.8564 15.9443 16.5319 31.2688 16.5319 50.1725C16.5319 69.0761 31.8564 84.4006 50.7601 84.4006C50.9756 84.4006 51.1906 84.3986 51.4051 84.3946Z"
+                                fill="white"></path>
+                        </svg>
+
+                    </div>
+                    <p class="text-3xl font-bold text-center uppercase  pb-6">
+                        ДИЖИТАЛ <br />ПЛАТФОРМ
+                    </p>
+
+                    <p class="text-xl text-center">
+                        Веб сайт болон <br /> гар утасны аппликейшн
+                    </p>
+
+                </div>
+
+                <div class="rounded-[1.5em] border border-gray shadow backdrop-blur-md bg-white/10 p-10  ">
+                    <div class="flex justify-center pb-10">
+                        <svg class="h-20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="49.8484" cy="49.8484" r="49.8484" fill="#7B00FF"></circle>
+                            <path
+                                d="M74.104 50.2124V27.6798C74.104 25.9877 72.7239 24.6072 71.0321 24.6072H63.4634V21.0596H59.9462V24.6072H38.6946V21.0596H35.1774V24.6072H27.6682C25.9763 24.6072 24.5962 25.9877 24.5962 27.6798V71.0529C24.5962 72.7451 25.9763 74.1255 27.6682 74.1255H53.5054C56.4142 77.3169 60.5844 79.3208 65.2294 79.3208C74.0002 79.3208 81.1384 72.181 81.1384 63.4084C81.1533 57.9311 78.3484 53.0773 74.104 50.2124ZM35.1923 28.1251V31.6728H38.7095V28.1251H59.9611V31.6728H63.4782V28.1251H70.6165V35.2352H28.1282V28.1251H35.1923ZM28.1133 70.6224V38.7383H70.6017V48.446C68.9247 47.8375 67.129 47.4961 65.2443 47.4961C56.4735 47.4961 49.3353 54.6358 49.3353 63.4084C49.3353 66.006 49.9734 68.4404 51.0716 70.6076H28.1133V70.6224ZM65.2443 75.8177C58.4176 75.8177 52.8525 70.2513 52.8525 63.4233C52.8525 56.5952 58.4176 51.0288 65.2443 51.0288C72.0709 51.0288 77.6361 56.5952 77.6361 63.4233C77.6361 70.2513 72.0709 75.8177 65.2443 75.8177Z"
+                                fill="white"></path>
+                            <path
+                                d="M58.166 61.627H63.4938V64.4176L59.932 65.0262V68.7222L63.4938 68.1285V72.255H66.9961V67.5348L70.543 66.941V63.2301L66.9961 63.8239V61.627H72.309V58.1239H58.166V61.627Z"
+                                fill="white"></path>
+                        </svg>
+                    </div>
+                    <p class="text-3xl font-bold text-center uppercase  pb-6">
+                        САНХҮҮГИЙН <br />ҮЙЛЧИЛГЭЭ
+                    </p>
+
+                    <p class="text-xl text-center">
+                        Түрээсийн төлбөрөө <br />сар сардаа төл
+                    </p>
+
+                </div>
+
+                <div class="rounded-[1.5em] border border-gray shadow backdrop-blur-md bg-white/10 p-10">
+                    <div class="flex justify-center pb-10">
+                        <svg class="h-20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="49.8484" cy="50.1516" r="49.8484" fill="#7B00FF"></circle>
+                            <path
+                                d="M67.6896 51.5308C58.7564 51.5308 51.4859 58.8028 51.4859 67.7379C51.4859 76.673 58.7564 83.9451 67.6896 83.9451C76.6228 83.9451 83.8933 76.673 83.8933 67.7379C83.8933 58.8028 76.6228 51.5308 67.6896 51.5308ZM63.2003 79.5304C64.1677 77.8976 65.906 76.8544 67.8861 76.8544C69.8058 76.8544 71.5138 77.8371 72.4963 79.4095C71.015 80.0293 69.3976 80.362 67.6896 80.362C66.1025 80.362 64.6061 80.0596 63.2003 79.5304ZM75.5799 77.5801C73.9625 74.9495 71.1057 73.2864 67.8861 73.2864C64.5909 73.2864 61.6434 75.0402 60.0714 77.7918C57.0332 75.4786 55.0682 71.8502 55.0682 67.753C55.0682 60.7834 60.7365 55.129 67.6896 55.129C74.6578 55.129 80.311 60.7985 80.311 67.753C80.311 71.7141 78.4669 75.267 75.5799 77.5801Z"
+                                fill="white"></path>
+                            <path
+                                d="M57.2593 49.7166H38.8639V76.7486H24.4286V46.2846H19.2289V45.1659L49.6109 21.3389L80.3103 45.181V46.2846H77.4082V49.8677H83.8927L83.8776 43.4272L49.5958 16.8033L15.6466 43.4272L15.6617 49.8677H20.8463V80.3317H42.4462V53.2997H57.2593V49.7166Z"
+                                fill="white"></path>
+                            <path
+                                d="M67.8713 60.6777C64.9087 60.6777 62.4902 63.0967 62.4902 66.06C62.4902 69.0232 64.9087 71.4422 67.8713 71.4422C70.8339 71.4422 73.2524 69.0232 73.2524 66.06C73.2524 63.0967 70.8339 60.6777 67.8713 60.6777ZM67.8713 67.8591C66.8737 67.8591 66.0726 67.0578 66.0726 66.06C66.0726 65.0621 66.8888 64.2608 67.8713 64.2608C68.8689 64.2608 69.67 65.0773 69.67 66.06C69.67 67.0578 68.8689 67.8591 67.8713 67.8591Z"
+                                fill="white"></path>
+                        </svg>
+                    </div>
+
+                    <p class="text-3xl font-bold text-center uppercase  pb-6">
+                        Хөрөнгийн <br />менежмент
+                    </p>
+
+                    <p class="text-xl text-center">
+                        Орон сууцны түрээсийн <br> менежментийн цогц үйлчилгээ
+                    </p>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-no-repeat bg-contain bg-top bg-[url('pics/bg_white.svg')]  bg-indigo-50">
+        <div class="max-w-screen-xl mx-auto p-5">
+            <p class="text-center font-semibold py-10  md:pt-20 md:pb-16 text-4xl md:text-5xl">
+                Харилцагчдын сэтгэгдэл
+            </p>
+
+            <div class="owl-carousel owl-theme">
+
+                <div class="item my-5">
+                    <div class="bg-gradient-to-r from-violet-600 to-emerald-400 -rotate-3 rounded-lg">
+                        <div
+                            class="rounded-lg border border-gray shadow-lg p-6 bg-white rotate-3 bg-[url('pics/review_bg.svg')] bg-center bg-top bg-no-repeat">
+                            <div class="flex flex-row">
+                                <div class="flex-none w-24 relative">
+                                    <img src="pics/owner1.png"
+                                        class="h-24 w-24 object-cover border-4 rounded-full border-violet-600 absolute -top-10 " />
+                                </div>
+                                <div class="flex-1 pl-4">
+                                    <p class="uppercase font-semibold text-xl">А.Ичинхорлоо</p>
+                                    <p class="text-gray-600 text-lg">Түрээслүүлэгч</p>
+                                </div>
+                            </div>
+                            <div class="relative my-4  h-1 rounded-full bg-gray-200">
+                                <div
+                                    class="w-[92%] bg-gradient-to-r from-violet-600 to-emerald-400 from-40%  h-1 rounded-full">
+                                </div>
+                                <div class="absolute -top-1 end-[8%] rounded-full w-3 h-3 bg-emerald-400">
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-justify leading-tight">
+                                    Байраа түрээслүүлэх тал дээр эхэндээ би өөрөө түрээслүүлчихнэ ээ амархан гэж
+                                    бодож байсан юм. Тэгээд хүүгийнхээ санал болгосноор Rentpay-с нэг үйлчилгээ авч
+                                    үзсэн, таалагдаад одоог хүртэл үйлчлүүлж байгаа. Миний анзаараагүй олон жижигхэн
+                                    зүйл дээр байраа түрээслүүлэхтэй холбоотойгоор их цаг алддаг байсан юм билээ.
+                                    Одоо их амар болсон та бүхэндээ амжилт хүсье.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item my-5">
+                    <div class="bg-gradient-to-r to-violet-600 from-rose-400 -rotate-3 rounded-lg">
+                        <div
+                            class="rounded-lg border border-gray shadow-lg p-6 bg-white rotate-3 bg-[url('pics/review_bg.svg')] bg-center bg-top bg-no-repeat">
+                            <div class="flex flex-row">
+                                <div class="flex-none w-24 relative">
+                                    <img src="pics/buyer1.png"
+                                        class="h-24 w-24 object-cover border-4 rounded-full border-rose-400 absolute -top-10 " />
+                                </div>
+                                <div class="flex-1 pl-4">
+                                    <p class="uppercase font-semibold text-xl">Х.Батбилэг</p>
+                                    <p class="text-gray-600 text-lg">Түрээслэгч</p>
+                                </div>
+                            </div>
+                            <div class="relative my-4  h-1 rounded-full bg-gray-200">
+                                <div
+                                    class="w-[95%] bg-gradient-to-r to-violet-600 from-rose-400 from-40%  h-1 rounded-full">
+                                </div>
+                                <div class="absolute -top-1 end-[5%] rounded-full w-3 h-3 bg-violet-600">
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-justify leading-tight">
+                                    Rentpay-ээр байр түрээслээд одоо 2 жил болж байна. Өмнө бас байр түрээслээд
+                                    явдаг байсан гэхдээ төлбөрөө бөөнд нь өгдөг байсан болохоор санхүүгийн хувьд
+                                    нэлээн чангахан байсан.
+                                    Rentpay-ээс үйлчилгээ авч эхэлснээс хойш сар сардаа түрээсээ төлөөд санхүүгээ
+                                    арай илүү ашигтайгаар зохицуулж, тогтмол хуримтлал үүсгэх боломжтой болсон.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item my-5">
+                    <div class="bg-gradient-to-r from-violet-600 to-emerald-400 -rotate-3 rounded-lg">
+                        <div
+                            class="rounded-lg border border-gray shadow-lg p-6 bg-white rotate-3 bg-[url('pics/review_bg.svg')] bg-center bg-top bg-no-repeat">
+                            <div class="flex flex-row">
+                                <div class="flex-none w-24 relative">
+                                    <img src="pics/owner2.png"
+                                        class="h-24 w-24 object-cover border-4 rounded-full border-violet-600 absolute -top-10 " />
+                                </div>
+                                <div class="flex-1 pl-4">
+                                    <p class="uppercase font-semibold text-xl">Н.Нарантуяа</p>
+                                    <p class="text-gray-600 text-lg">Түрээслүүлэгч</p>
+                                </div>
+                            </div>
+                            <div class="relative my-4  h-1 rounded-full bg-gray-200">
+                                <div
+                                    class="w-[98%] bg-gradient-to-r from-violet-600 to-emerald-400 from-40%  h-1 rounded-full">
+                                </div>
+                                <div class="absolute -top-1 end-[2%] rounded-full w-3 h-3 bg-emerald-400">
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-justify leading-tight">
+                                    Сайхан үйлчилгээ байна лээ. Эгч нь өмнө нь өөрөө байраа түрээслүүлэх гээд их
+                                    төвөгтэй байсан аягүй олон хүмүүс ирж байр үзнэ. Тэр болгондоо их олон юм
+                                    асууна. Нэг бүрчлэн тайлбарлах төвөгтэй болохоор заримдаа эвгүй зан гаргачихна
+                                    тэрэндээ дараа нь бас жоохон харамсана гэж. Тэгж үзэж үзчихээд зарим нь усанд
+                                    хаясан чулуу шиг хариу мэдээ томоогүй алга болчихно.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item my-5">
+                    <div class="bg-gradient-to-r to-violet-600 from-rose-400 -rotate-3 rounded-lg">
+                        <div
+                            class="rounded-lg border border-gray shadow-lg p-6 bg-white rotate-3 bg-[url('pics/review_bg.svg')] bg-center bg-top bg-no-repeat">
+                            <div class="flex flex-row">
+                                <div class="flex-none w-24 relative">
+                                    <img src="pics/buyer2.png"
+                                        class="h-24 w-24 object-cover border-4 rounded-full border-rose-400 absolute -top-10 " />
+                                </div>
+                                <div class="flex-1 pl-4">
+                                    <p class="uppercase font-semibold text-xl">Б.Хосбаяр</p>
+                                    <p class="text-gray-600 text-lg">Түрээслэгч</p>
+                                </div>
+                            </div>
+                            <div class="relative my-4  h-1 rounded-full bg-gray-200">
+                                <div
+                                    class="w-[88%] bg-gradient-to-r to-violet-600 from-rose-400 from-40%  h-1 rounded-full">
+                                </div>
+                                <div class="absolute -top-1 end-[12%] rounded-full w-3 h-3 bg-violet-600">
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-justify leading-tight">
+                                    Таалагдсан байраа түрээсэлье гэхээр төлбөрийн нөхцөл 6+1 гээд байсан. Тэгээд
+                                    Рэнтпэй үйлчилгээг ашиглаад анх энэ байрандаа 1 сарын төлбөрөө төлөөд орж
+                                    байсан. Манай гэр бүлд санхүүгийн хувьд маш их тус болсонд маш их баяртай
+                                    байгаа. БАЯРЛАЛАА.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item my-5">
+                    <div class="bg-gradient-to-r from-violet-600 to-emerald-400 -rotate-3 rounded-lg">
+                        <div
+                            class="rounded-lg border border-gray shadow-lg p-6 bg-white rotate-3 bg-[url('pics/review_bg.svg')] bg-center bg-top bg-no-repeat">
+                            <div class="flex flex-row">
+                                <div class="flex-none w-24 relative">
+                                    <img src="pics/owner3.png"
+                                        class="h-24 w-24 object-cover border-4 rounded-full border-violet-600 absolute -top-10 " />
+                                </div>
+                                <div class="flex-1 pl-4">
+                                    <p class="uppercase font-semibold text-xl">Р. Чамин-Эрдэнэ</p>
+                                    <p class="text-gray-600 text-lg">Түрээслүүлэгч</p>
+                                </div>
+                            </div>
+                            <div class="relative my-4  h-1 rounded-full bg-gray-200">
+                                <div
+                                    class="w-[90%] bg-gradient-to-r from-violet-600 to-emerald-400 from-40%  h-1 rounded-full">
+                                </div>
+                                <div class="absolute -top-1 end-[10%] rounded-full w-3 h-3 bg-emerald-400">
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-justify leading-tight">
+                                    Rentpay-ээр дамжуулан байр түрээслээд 7 сар гаран болж байна. Анх би байр
+                                    түрээсэлж эхлээд жил гаран болчихсон байхад манай байрны эзэн Rentpay-г санал
+                                    болгосон. Тэрнээс хойш 1+1 нөхцөлөөр байр түрээслэхэд санхүүгийн асуудал ч
+                                    цэгцрээд ирсэн бас байртай холбоотой асуудал гарсан тохиолдолд Rentpay-н
+                                    ажилчдаас зөвлөгөө аваад амархан шийдээд байгаа.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item my-5">
+                    <div class="bg-gradient-to-r to-violet-600 from-rose-400 -rotate-3 rounded-lg">
+                        <div
+                            class="rounded-lg border border-gray shadow-lg p-6 bg-white rotate-3 bg-[url('pics/review_bg.svg')] bg-center bg-top bg-no-repeat">
+                            <div class="flex flex-row">
+                                <div class="flex-none w-24 relative">
+                                    <img src="pics/buyer3.png"
+                                        class="h-24 w-24 object-cover border-4 rounded-full border-rose-400 absolute -top-10 " />
+                                </div>
+                                <div class="flex-1 pl-4">
+                                    <p class="uppercase font-semibold text-xl">ш.Батбаяр</p>
+                                    <p class="text-gray-600 text-lg">Түрээслэгч</p>
+                                </div>
+                            </div>
+                            <div class="relative my-4  h-1 rounded-full bg-gray-200">
+                                <div
+                                    class="w-[91%] bg-gradient-to-r to-violet-600 from-rose-400 from-40%  h-1 rounded-full">
+                                </div>
+                                <div class="absolute -top-1 end-[9%] rounded-full w-3 h-3 bg-violet-600">
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-justify leading-tight">
+                                    Танайхаар дамжуулж байр түрээслээд 3 сар хавьцаа болж байна. Ер нь бол их амар
+                                    үйлчилгээ шиг санагдсан сар сардаа түрээсээ төлчихдөг болохоор санаа зовох юм
+                                    байхгүй, одоогийн миний цалинд ч нэг өрөө байрны түрээс маань хангалттай
+                                    болчихдог.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bg-no-repeat bg-contain bg-top bg-[url('pics/bg_indigo.svg')]  bg-indigo-100">
+        <div class="max-w-screen-xl mx-auto p-5">
+            <div class="py-20 md:py-28">
+                <p class="text-center uppercase font-bold text-4xl md:text-5xl">
+                    түрээслүүл төлбөрөө
+                </p>
+                <p class="pt-2 text-center uppercase font-bold text-4xl md:text-5xl">
+                    бөөнд нь ав
+                </p>
+                <p class="text-center text-xl pt-4">
+                    Таны орон сууц түрээсийн аюулгүй аялал эндээс эхэлнэ
+                </p>
+
+                <div class="pt-10 text-center">
+                    <a href="http://bizpro.rentpay.mn" target="_blank"
+                        class="shadow-md inline-flex items-center space-x-2 justify-center block text-white bg-violet-700 hover:bg-violet-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full px-8 py-2 text-center">
+
+                        <svg class="h-7 w-7" viewBox="0 0 36 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2 14.0799C2 11.9727 3.09662 10.0173 4.89464 8.91855L14.6981 2.92753C16.6344 1.74424 19.0701 1.74424 21.0064 2.92753L30.8099 8.91855C32.6079 10.0173 33.7045 11.9727 33.7045 14.0799V25.9512C33.7045 29.2919 30.9964 32 27.6558 32H8.04878C4.70813 32 2 29.2919 2 25.9512V14.0799Z"
+                                stroke="white" stroke-width="3.02439" />
+                            <path d="M18.2046 11.5681V24.2499" stroke="white" stroke-width="4" stroke-linecap="round" />
+                            <path d="M24.5454 17.9089L11.8636 17.9089" stroke="white" stroke-width="4"
+                                stroke-linecap="round" />
+                        </svg>
+
+
+                        <span class="text-2xl md:text-3xl font-medium">
+                            Түрээслүүлэх
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-indigo-50 bg-no-repeat bg-cover bg-bottom bg-[url('pics/bg_foot.svg')]">
+        <div class="max-w-screen-xl mx-auto p-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-white" id="contact">
+
+                <div class="md:py-10 pb-3">
+
+                    <img src="pics/logo_w.svg" class="w-44 md:w-56">
+                    <p>
+                        Түрээсийн шинэ боломж
+                    </p>
+                    <div class="">
+                        <div class="w-56 pt-5">
+                            <a href="#"
+                                class="flex space-x-1 font-medium rounded-lg hover:bg-white/70 px-4 py-2 bg-white/50">
+                                <svg class="h-6 w-6" viewBox="0 0 27 33" fill="white"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.3696 5.22937C18.9785 4.5275 19.4429 3.71225 19.7359 2.83042C20.0289 1.9486 20.1448 1.01759 20.077 0.0908318C18.2075 0.241745 16.472 1.12105 15.2446 2.53929C14.6568 3.21902 14.2113 4.00978 13.9347 4.86475C13.658 5.71972 13.5556 6.62152 13.6337 7.51675C14.5457 7.52434 15.4472 7.32199 16.2684 6.92534C17.0896 6.5287 17.8086 5.9484 18.3696 5.22937ZM22.4289 17.2139C22.4397 15.9796 22.7648 14.7684 23.3736 13.6946C23.9823 12.6208 24.8547 11.7198 25.9082 11.0767C25.2433 10.1186 24.3643 9.32866 23.341 8.76944C22.3176 8.21023 21.178 7.89715 20.0126 7.85502C17.4997 7.59729 15.1801 9.32087 13.8431 9.32087C12.5062 9.32087 10.6215 7.88724 8.52741 7.91945C7.15842 7.96455 5.82448 8.36369 4.6557 9.07794C3.48693 9.79219 2.52323 10.7972 1.85859 11.9948C-0.976468 16.924 1.13372 24.2532 3.96877 28.232C5.25743 30.1811 6.86826 32.3879 8.99455 32.3074C11.1208 32.2268 11.8135 30.9865 14.2781 30.9865C16.7426 30.9865 17.4997 32.3074 19.5938 32.259C21.6879 32.2107 23.1698 30.2616 24.5229 28.3125C25.4814 26.8975 26.2302 25.3512 26.7459 23.7217C25.4693 23.1772 24.3801 22.2708 23.6129 21.1142C22.8457 19.9577 22.434 18.6018 22.4289 17.2139Z" />
+                                </svg>
+                                <span class="text-lg text-white">App Store</span>
+                            </a>
+                        </div>
+                        <div class="w-56 pt-3">
+                            <a href="#"
+                                class="flex space-x-1 font-medium rounded-lg hover:bg-white/70 px-4 py-2 bg-white/50">
+                                <svg class="h-6 w-6" viewBox="0 0 29 32" fill="white"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.782227 1.74607V30.6517L15.235 16.1989L0.782227 1.74607ZM2.09467 31.9021C2.27397 31.8869 2.44805 31.832 2.60404 31.7408L20.5211 21.485L16.5164 17.4803L2.09467 31.9021ZM22.1226 20.5683L27.9499 17.2327C28.137 17.1326 28.2934 16.9835 28.4024 16.8015C28.5114 16.6195 28.569 16.4113 28.569 16.1991C28.569 15.9869 28.5114 15.7787 28.4024 15.5967C28.2934 15.4147 28.137 15.2657 27.9499 15.1655L22.1224 11.8298C22.0833 11.8979 22.0347 11.962 21.9765 12.0202L17.7979 16.1989L21.9767 20.3777C22.0349 20.4359 22.0836 20.5001 22.1226 20.5683ZM20.5208 10.9131L16.5164 14.9175L2.09519 0.496216C2.2743 0.5114 2.4482 0.566316 2.60404 0.657427L20.5208 10.9131Z"
+                                        fill="white" />
+                                </svg>
+
+                                <span class="text-lg text-white">Google Play</span>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="md:py-10 pb-3">
+                    <p class=" pb-8 font-semibold text-lg">
+                        Rentpay
+                    </p>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="http://rentpay.bizpro.mn" target="_blank">
+                                Байр хайх
+                            </a>
+                        </li>
+                        <li>
+                            <a href="owner.html">
+                                Tүрээслүүлэгч
+                            </a>
+                        </li>
+                        <li>
+                            <a href="buyer.html">
+                                Tүрээслэгч
+                            </a>
+                        </li>
+                        <li>
+                            <a href="help.html">
+                                Тусламж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Үйлчилгээний нөхцөл
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="md:py-10 pb-3">
+                    <p class="pb-8 font-semibold text-lg">
+                        Бид
+                    </p>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="about.html">Бидний тухай</a>
+                        </li>
+                        <li>
+                            <a href="career.html">Хүний нөөц</a>
+                        </li>
+                        <li>
+                            <a href="news.html" target="_blank">
+                                Блог & Мэдээ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Холбоо барих</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="md:py-10 pb-3">
+                    <p class="pb-8 font-semibold text-lg">
+                        Биднийг дагаарай
+                    </p>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="https://www.facebook.com/RentPay.mn" target="_blank"
+                                class="flex justify-start space-x-2">
+                                <svg class="h-6 w-6" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_347_70)">
+                                        <path
+                                            d="M3.28669 0C1.46601 0 0 1.46601 0 3.28669V14.7133C0 16.534 1.46601 18 3.28669 18H9.47983V10.9631H7.61908V8.42963H9.47983V6.26513C9.47983 4.56458 10.5792 3.00319 13.1119 3.00319C14.1373 3.00319 14.8956 3.10163 14.8956 3.10163L14.8359 5.46752C14.8359 5.46752 14.0626 5.46021 13.2187 5.46021C12.3054 5.46021 12.159 5.88101 12.159 6.57959V8.42965H14.9085L14.7887 10.9632H12.159V18H14.7133C16.534 18 18 16.534 18 14.7133V3.28671C18 1.46603 16.534 1.8e-05 14.7133 1.8e-05L3.28669 0Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_347_70">
+                                            <rect width="18" height="18" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/rentpaymn" target="_blank"
+                                class="flex justify-start space-x-2">
+                                <svg class="h-6 h-6" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_347_66)">
+                                        <path
+                                            d="M9.0001 6.13619C7.42315 6.13619 6.13624 7.4231 6.13624 9.00005C6.13624 10.577 7.42315 11.8639 9.0001 11.8639C10.5771 11.8639 11.864 10.577 11.864 9.00005C11.864 7.4231 10.5771 6.13619 9.0001 6.13619ZM17.5896 9.00005C17.5896 7.81411 17.6003 6.63892 17.5337 5.45513C17.4671 4.08013 17.1534 2.85982 16.148 1.85435C15.1403 0.846733 13.9222 0.535209 12.5472 0.468608C11.3612 0.402006 10.186 0.412748 9.00225 0.412748C7.81631 0.412748 6.64112 0.402006 5.45733 0.468608C4.08233 0.535209 2.86202 0.848881 1.85655 1.85435C0.84893 2.86197 0.537407 4.08013 0.470805 5.45513C0.404203 6.64107 0.414946 7.81626 0.414946 9.00005C0.414946 10.1838 0.404203 11.3612 0.470805 12.545C0.537407 13.92 0.851079 15.1403 1.85655 16.1458C2.86416 17.1534 4.08233 17.4649 5.45733 17.5315C6.64327 17.5981 7.81846 17.5874 9.00225 17.5874C10.1882 17.5874 11.3634 17.5981 12.5472 17.5315C13.9222 17.4649 15.1425 17.1512 16.148 16.1458C17.1556 15.1381 17.4671 13.92 17.5337 12.545C17.6024 11.3612 17.5896 10.186 17.5896 9.00005ZM9.0001 13.4065C6.56163 13.4065 4.59366 11.4385 4.59366 9.00005C4.59366 6.56158 6.56163 4.59361 9.0001 4.59361C11.4386 4.59361 13.4065 6.56158 13.4065 9.00005C13.4065 11.4385 11.4386 13.4065 9.0001 13.4065ZM13.587 5.44224C13.0177 5.44224 12.5579 4.98247 12.5579 4.41314C12.5579 3.8438 13.0177 3.38404 13.587 3.38404C14.1564 3.38404 14.6161 3.8438 14.6161 4.41314C14.6163 4.54833 14.5898 4.68223 14.5381 4.80716C14.4865 4.93209 14.4107 5.04561 14.3151 5.1412C14.2195 5.2368 14.106 5.31259 13.981 5.36425C13.8561 5.41591 13.7222 5.44241 13.587 5.44224Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_347_66">
+                                            <rect width="18" height="18" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                                <span>instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.threads.net/@rentpaymn" target="_blank"
+                                class="flex justify-start space-x-2">
+                                <svg class="w-6 h-6" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_347_74)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M17.1756 8.15535C17.1768 7.1158 17.1779 6.08273 17.1194 5.04302C17.0528 3.66802 16.7391 2.44771 15.7337 1.44224C14.726 0.434624 13.5079 0.1231 12.1329 0.056499C11.0916 -0.00197577 10.0587 -0.000830931 9.02094 0.000319196C8.87671 0.000479049 8.73239 0.000639004 8.58794 0.000639004C8.44319 0.000639004 8.2986 0.000478977 8.15414 0.000319088C7.115 -0.000831002 6.08233 -0.00197394 5.04302 0.056499C3.66802 0.1231 2.44771 0.436772 1.44224 1.44224C0.434623 2.44986 0.1231 3.66802 0.0564982 5.04302C-0.001976 6.08423 -0.000831033 7.11716 0.000319267 8.15489C0.000479157 8.29914 0.00063915 8.44347 0.00063915 8.58794C0.00063915 8.73238 0.000479205 8.87672 0.000319338 9.021C-0.000830984 10.0591 -0.00197721 11.0935 0.0564982 12.1329C0.1231 13.5079 0.436772 14.7282 1.44224 15.7337C2.44985 16.7413 3.66802 17.0528 5.04302 17.1194C6.08467 17.1779 7.11802 17.1768 8.15619 17.1756C8.30001 17.1754 8.44391 17.1753 8.58794 17.1753C8.73227 17.1753 8.87644 17.1754 9.02048 17.1756C10.0601 17.1768 11.0932 17.1779 12.1329 17.1194C13.5079 17.0528 14.7282 16.7391 15.7337 15.7337C16.7413 14.726 17.0528 13.5079 17.1194 12.1329C17.1788 11.1099 17.1773 10.0934 17.1758 9.07083C17.1755 8.91003 17.1753 8.74909 17.1753 8.58794C17.1753 8.4436 17.1755 8.29941 17.1756 8.15535ZM11.3918 7.84974C11.4485 7.87407 11.5044 7.89944 11.5595 7.92586C12.3379 8.29931 12.9072 8.8647 13.2058 9.56085C13.622 10.5314 13.6601 12.113 12.3973 13.3746C11.4321 14.3388 10.2605 14.774 8.59834 14.7855H8.59079C6.72151 14.7727 5.28366 14.1435 4.31769 12.9157C3.45823 11.8232 3.0149 10.3029 3 8.39729V8.38832C3.01496 6.48273 3.45829 4.96244 4.31775 3.86987C5.28366 2.64209 6.72151 2.01301 8.59079 2H8.59834C10.4717 2.01301 11.9256 2.63975 12.92 3.86284C13.4104 4.46628 13.7709 5.19387 14 6.03823L12.9247 6.32515C12.7357 5.63915 12.4491 5.0508 12.0688 4.58294C11.2933 3.62907 10.1245 3.13949 8.59457 3.1281C7.07564 3.13936 5.92692 3.62654 5.18008 4.57591C4.48067 5.46498 4.11906 6.74948 4.10552 8.39254C4.11932 10.0363 4.48041 11.3203 5.17982 12.2094C5.92679 13.1588 7.07545 13.6459 8.59431 13.6572C9.96359 13.6471 10.8696 13.3213 11.6234 12.5683C12.4837 11.7088 12.4677 10.6544 12.1925 10.0128C12.0307 9.63541 11.7377 9.32143 11.3423 9.08278C11.246 9.80047 11.0279 10.37 10.6831 10.8095C10.2291 11.3883 9.5783 11.7047 8.74876 11.7502C8.12033 11.7846 7.51611 11.6331 7.04682 11.3233C6.49204 10.9571 6.16719 10.3961 6.13251 9.74407C6.06394 8.45858 7.08371 7.53315 8.66991 7.44206C9.23288 7.40979 9.75988 7.43523 10.2463 7.51812C10.1817 7.12255 10.0511 6.80934 9.85591 6.58254C9.58766 6.27083 9.17309 6.1111 8.62378 6.10759H8.60849C8.16744 6.10759 7.56855 6.2312 7.18696 6.81025L6.2696 6.18085C6.78039 5.40577 7.61038 4.97981 8.6083 4.97981H8.63113C10.2995 4.99029 11.2931 6.03134 11.3918 7.84974ZM7.23654 9.68278C7.27213 10.3508 7.99438 10.6631 8.68962 10.6241C9.37029 10.5867 10.1429 10.3196 10.2746 8.67465C9.92143 8.59749 9.53301 8.55715 9.11786 8.55715C8.99172 8.55706 8.8632 8.56079 8.7323 8.56834C7.58917 8.63425 7.21012 9.18721 7.23654 9.68278Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_347_74">
+                                            <rect width="18" height="18" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                                <span>threads</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/rentpay-solution-llc" target="_blank"
+                                class="flex justify-start space-x-2">
+                                <svg class="w-6 h-6" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_347_114)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M17.1756 8.15535C17.1768 7.1158 17.1779 6.08273 17.1194 5.04302C17.0528 3.66802 16.7391 2.44771 15.7337 1.44224C14.726 0.434624 13.5079 0.1231 12.1329 0.056499C11.0916 -0.00197577 10.0587 -0.000830931 9.02094 0.000319196C8.87671 0.000479049 8.73239 0.000639004 8.58794 0.000639004C8.44319 0.000639004 8.2986 0.000478977 8.15414 0.000319088C7.115 -0.000831002 6.08233 -0.00197394 5.04302 0.056499C3.66802 0.1231 2.44771 0.436772 1.44224 1.44224C0.434623 2.44986 0.1231 3.66802 0.0564982 5.04302C-0.001976 6.08423 -0.000831033 7.11716 0.000319267 8.15489C0.000479157 8.29914 0.00063915 8.44347 0.00063915 8.58794C0.00063915 8.73238 0.000479205 8.87672 0.000319338 9.021C-0.000830984 10.0591 -0.00197721 11.0935 0.0564982 12.1329C0.1231 13.5079 0.436772 14.7282 1.44224 15.7337C2.44985 16.7413 3.66802 17.0528 5.04302 17.1194C6.08467 17.1779 7.11802 17.1768 8.15619 17.1756C8.30001 17.1754 8.44391 17.1753 8.58794 17.1753C8.73227 17.1753 8.87644 17.1754 9.02048 17.1756C10.0601 17.1768 11.0932 17.1779 12.1329 17.1194C13.5079 17.0528 14.7282 16.7391 15.7337 15.7337C16.7413 14.726 17.0528 13.5079 17.1194 12.1329C17.1788 11.11 17.1773 10.0935 17.1758 9.07089V9.07083C17.1755 8.91003 17.1753 8.74909 17.1753 8.58794C17.1753 8.4436 17.1755 8.29941 17.1756 8.15535ZM9.0974 7.63801C9.05629 7.6879 9.01454 7.73856 8.96958 7.78878C8.96958 7.61574 8.96767 7.44271 8.96576 7.27064L8.96396 7.10277C8.97183 7.01281 8.94709 6.98357 8.8515 6.98357H7.3018C7.21183 6.98357 7.18035 7.00044 7.18035 7.09603V12.8596C7.18035 12.9484 7.20621 12.9721 7.29281 12.9721C7.83711 12.9676 8.38142 12.9676 8.92572 12.9721C9.02469 12.9732 9.04831 12.9439 9.04831 12.8472V9.93677C9.04811 9.78002 9.0575 9.62341 9.07642 9.46781C9.15852 8.81666 9.4914 8.49953 10.1324 8.46579C10.6014 8.44217 10.9219 8.66709 11.0512 9.11693C11.1142 9.35954 11.1434 9.6097 11.1378 9.86029C11.1378 10.8567 11.1389 11.8595 11.1412 12.8686C11.1412 12.9518 11.1592 12.9811 11.2536 12.9811C11.7942 12.9766 12.3344 12.9766 12.8742 12.9811C12.9709 12.9811 12.9979 12.9563 12.9979 12.8574V9.70847C13.0118 9.21148 12.9569 8.71497 12.8348 8.233C12.6526 7.58973 12.2692 7.13539 11.6101 6.94533C11.3228 6.86742 11.0261 6.82957 10.7285 6.83287C10.4695 6.82701 10.2119 6.87293 9.97089 6.96795C9.72989 7.06296 9.51028 7.20515 9.32496 7.38617C9.24149 7.46317 9.17045 7.54937 9.0974 7.63801L9.0974 7.63801ZM6.00964 9.984V12.836C6.00964 12.9417 5.98377 12.9732 5.87468 12.9721H4.25526C4.16866 12.9721 4.1428 12.9507 4.1428 12.8596V7.08703C4.1428 7.00718 4.16192 6.97457 4.24626 6.97457H5.89043C5.99502 6.97457 6.00964 7.01393 6.00964 7.1039C6.00889 7.74622 6.00914 8.38605 6.00939 9.02505V9.02625L6.00964 9.984ZM5.9804 5.67473C6.09831 5.49626 6.16055 5.28678 6.15921 5.07287C6.15685 4.78828 6.04244 4.51609 5.84078 4.31527C5.63911 4.11444 5.36644 4.00118 5.08184 4C4.86794 3.99956 4.65872 4.06267 4.48073 4.18133C4.30275 4.29999 4.16403 4.46885 4.08218 4.66648C4.00032 4.86411 3.97901 5.0816 4.02097 5.29135C4.06292 5.50111 4.16624 5.69368 4.31781 5.84462C4.46938 5.99556 4.66238 6.09807 4.87231 6.13914C5.08224 6.18022 5.29964 6.158 5.49692 6.07532C5.69421 5.99264 5.86248 5.85321 5.9804 5.67473Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_347_114">
+                                            <rect width="18" height="18" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                                <span>linkedin</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-violet-800">
+        <div class="max-w-screen-xl mx-auto p-5 text-white">
+            <div class="text-center">
+                <p class="mb-3 md:mb-0">
+                    Бүх эрх хуулиар хамгаалагдсан ©2024. Рэнтпэй
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 40,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1280: {
+                    items: 3
+                },
+
+            }
+        });
+    });
+
+    let vid = document.getElementById("introVid");
+    let but = document.getElementById("playButton");
+
+    function playVid() {
+        if (but.innerText == "Play") {
+            vid.play();
+            but.innerText = "Stop";
+        } else {
+            vid.pause();
+            but.innerText = "Play";
+        }
+    }
+
+    let fur1 = document.getElementById("vid1");
+    let fur2 = document.getElementById("vid2");
+    let fur3 = document.getElementById("vid3");
+
+    //fur1.play();
+
+    fur1.onended = function () {
+        fur1.classList.add("hidden");
+        fur2.classList.remove("hidden");
+        fur2.play();
+    };
+
+    fur2.onended = function () {
+        fur2.classList.add("hidden");
+        fur3.classList.remove("hidden");
+        fur3.play();
+    };
+
+    var textWrapper = document.querySelector('.slogan1 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({ loop: false })
+        .add({
+            targets: '.slogan1 .letter',
+            translateY: ["1.1em", 0],
+            translateZ: 0,
+            duration: 1750,
+            delay: (el, i) => 50 * i
+        }).add({
+            targets: '.slogan1',
+            opacity: 1,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+
+
+</script>
+
+
+
+</html>

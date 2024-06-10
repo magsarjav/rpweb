@@ -1,0 +1,546 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link rel="shortcut icon" id="favicon" href="pics/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <title>Rentpay</title>
+</head>
+
+
+
+<style>
+    body {
+        /*font-family: -apple-system, BlinkMacSystemFont, sans-serif;*/
+        font-family: 'SF Pro Display', sans-serif;
+    }
+</style>
+
+<body class="text-indigo-950">
+
+
+    <div class="max-w-screen-xl mx-auto p-5">
+        <p class="text-center font-bold text-4xl md:text-5xl py-10">
+            Заавар видео
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 pb-10">
+
+            <div
+                class="help-video cursor-pointer hover:to-violet-950 aspect-square bg-gradient-to-tr from-violet-900 to-violet-600 rounded-[2.5em] text-center border border-gray shadow-lg place-content-center bg-no-repeat bg-center bg-[url('pics/play.svg')]">
+                <div class="relative p-8">
+                    <p class="bottom-10 text-2xl font-bold text-white ">
+                        Рэнтпэй-д хэрхэн бүртгүүлэх вэ?
+                    </p>
+                    <img src="pics/play.svg" onclick="modalShow('youtube');"
+                        class="opacity-40 -z-8 w-20 cursor-pointer absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2" />
+                </div>
+            </div>
+
+            <!--Usuhuu hiis-->
+
+            <div
+                class="help-video cursor-pointer hover:to-violet-950 aspect-square bg-gradient-to-tr from-violet-900 to-violet-600 rounded-[2.5em] text-center border border-gray shadow-lg place-content-center ">
+                <div class="relative p-10">
+                    <p class="bottom-10 text-2xl font-bold text-white ">
+                        Түрээсийн эрх хэрхэн шалгуулах вэ?
+                    </p>
+                    <img src="pics/play.svg" onclick="modalShow('furn1');"
+                        class="opacity-40 -z-8 w-20 cursor-pointer absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2" />
+                </div>
+            </div>
+
+            <div
+                class="help-video cursor-pointer hover:to-violet-950 aspect-square bg-gradient-to-tr from-violet-900 to-violet-600 rounded-[2.5em] text-center border border-gray shadow-lg place-content-center">
+                <div class="relative p-10">
+                    <p class="bottom-10 text-2xl font-bold text-white ">
+                        Байр хэрхэн түрээслэх вэ?
+                    </p>
+                    <img src="pics/play.svg" onclick="modalShow('furn2');"
+                        class="opacity-40 -z-8 w-20 cursor-pointer absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2" />
+                </div>
+            </div>
+
+            <div
+                class="help-video cursor-pointer hover:to-violet-950 aspect-square bg-gradient-to-tr from-violet-900 to-violet-600 rounded-[2.5em] text-center border border-gray shadow-lg place-content-center">
+                <div class="relative p-10">
+                    <p class="bottom-10 text-2xl font-bold text-white ">
+                        Түрээсийн төлбөрөө хэрхэн төлөх вэ?
+                    </p>
+                    <img src="pics/play.svg"
+                        class="opacity-40 -z-8 w-20 cursor-pointer absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2" />
+                </div>
+            </div>
+
+            <div
+                class="help-video cursor-pointer hover:to-violet-950 aspect-square bg-gradient-to-tr from-violet-900 to-violet-600 rounded-[2.5em] text-center border border-gray shadow-lg place-content-center">
+                <div class="relative p-10">
+                    <p class="bottom-10 text-2xl font-bold text-white ">
+                        Байраа хэрхэн түрээслүүлэх вэ?
+                    </p>
+                    <img src="pics/play.svg"
+                        class="opacity-40 -z-8 w-20 cursor-pointer absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2" />
+                </div>
+            </div>
+
+            <div
+                class="help-video cursor-pointer hover:to-violet-950 aspect-square bg-gradient-to-tr from-violet-900 to-violet-600 rounded-[2.5em] text-center border border-gray shadow-lg place-content-center">
+                <div class="relative p-10">
+                    <p class="bottom-10 text-2xl font-bold text-white ">
+                        Түрээсийн хугацаа хэрхэн сунгах вэ?
+                    </p>
+                    <img src="pics/play.svg"
+                        class="opacity-40 -z-8 w-20 cursor-pointer absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2" />
+                </div>
+            </div>
+
+            <div
+                class="help-video cursor-pointer hover:to-violet-950 aspect-square bg-gradient-to-tr from-violet-900 to-violet-600 rounded-[2.5em] text-center border border-gray shadow-lg place-content-center">
+                <div class="relative p-10">
+                    <p class="bottom-10 text-2xl font-bold text-white ">
+                        Хугацаанаас өмнө гэрээ хэрхэн цуцлах вэ?
+                    </p>
+                    <img src="pics/play.svg"
+                        class="opacity-40 -z-8 w-20 cursor-pointer absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2" />
+                </div>
+            </div>
+
+            <div class="help-video cursor-pointer hover:to-violet-950 aspect-square bg-gradient-to-tr from-violet-900 to-violet-600 rounded-[2.5em] text-center border border-gray shadow-lg 
+                place-content-center">
+                <div class="relative p-10">
+                    <p class="bottom-10 text-2xl font-bold text-white ">
+                        Нууц үгээ хэрхэн сэргээх вэ?
+                    </p>
+                    <img src="pics/play.svg"
+                        class="opacity-40 -z-8 w-20 cursor-pointer absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="bg-indigo-50 bg-no-repeat bg-top bg-contain bg-[url('pics/bg_white.svg')]">
+        <div class="max-w-screen-xl mx-auto p-5">
+
+            <p class="text-center font-semibold text-4xl md:text-5xl pt-10 pb-14">
+                Түгээмэл асуулт хариулт
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-5">
+
+                <div id="accordion-color" data-accordion="collapse"
+                    data-active-classes="bg-white text-violet-700 rounded-2xl"
+                    data-inactive-classes="bg-white rounded-2xl">
+
+                    <div class="bg-white rounded-3xl mb-5">
+                        <h2 id="accordion-color-heading-1">
+                            <button type="button" class="flex items-center justify-between w-full p-6 gap-3"
+                                data-accordion-target="#accordion-color-body-1" aria-expanded="false"
+                                aria-controls="accordion-color-body-1">
+                                <span class="font-semibold text-xl text-left">
+                                    Rentpay гэж юу вэ?
+                                </span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" aria-hidden="true" viewBox="0 0 36 36"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.386597" y="0.642578" width="34.971" height="34.971" rx="17.4855"
+                                        fill="black" />
+                                    <path d="M27.0312 13.5483L17.8721 22.7074L8.71303 13.5483" stroke="white"
+                                        stroke-width="3.33057" />
+                                </svg>
+
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
+                            <div class="px-6 pb-6">
+                                <p class="mb-2 text-justify border-t pt-3 border-slate-500">
+                                    Rentpay бол үл хөдлөх хөрөнгийн салбарт
+                                    технологи, санхүүгийн үйлчилгээ, түрээсийн менежментийн цогц шийдэл, шинэ соёл,
+                                    стандартыг
+                                    нэвтрүүлж Түрээслэгч, түрээслүүлэгч хоёрт харилцан ашигтай цаг хугацаа хэмнэсэн
+                                    шийдлийг санал болгож буй цоо шинэ үйлчилгээ юм.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl mb-5">
+                        <h2 id="accordion-color-heading-2">
+                            <button type="button" class="flex items-center justify-between w-full p-6 gap-3"
+                                data-accordion-target="#accordion-color-body-2" aria-expanded="false"
+                                aria-controls="accordion-color-body-2">
+                                <span class="font-semibold text-xl text-left">
+                                    Менежментийн үйлчилгээ гэж юу вэ?
+                                </span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" aria-hidden="true" viewBox="0 0 36 36"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.386597" y="0.642578" width="34.971" height="34.971" rx="17.4855"
+                                        fill="black" />
+                                    <path d="M27.0312 13.5483L17.8721 22.7074L8.71303 13.5483" stroke="white"
+                                        stroke-width="3.33057" />
+                                </svg>
+
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+                            <div class="px-6 pb-6">
+                                <p class="mb-2 text-justify border-t pt-3 border-slate-500">
+                                    Rentpay менежментийн үйлчилгээ нь таныг түрээстэй холбоотой харилцааны стресст
+                                    өртүүлэхгүй өмнөөс тань бүхий л асуудлыг цогцоор нь шийдвэрлэж,хөрөнгийн
+                                    менежмент хийж ажиллана.Үүнд
+                                <ul class="list-disc ml-5">
+                                    <li>
+                                        Орон сууцны иж бүрэн даатгал – Төлбөрийг Rentpay хариуцна
+                                    </li>
+                                    <li>ҮХХ-н үнэ цэнийг нэмэгдүүлэхэд чиглэсэн зөвлөх үйлчилгээ</li>
+                                    <li>Түрээсийн төлбөрөө сар, сардаа төлөх боломж буюу санхүүгийн үйлчилгээ</li>
+                                    <li> Барьцаа хөрөнгийн удирдлага, хөрөнгийн хохирлыг шударгаар барагдуулах
+                                        тогтолцоо</li>
+                                    <li>Ашиглалт, СӨХ, контортой холбоотой мэдээллээр хангах, төлбөрийн хоцрогдлыг
+                                        хянах, байртай холбоотой аливаа санал гомдлын дагуу асуудлыг шийднэ.</li>
+                                    <li> Хөнгөлөлттэй нүүлгэлт, цэвэрлэгээ, засвар, интерьер, дулаан алдалт хэмжих
+                                        зэрэг дэд үйлчилгээнүүд</li>
+                                </ul>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl mb-5">
+                        <h2 id="accordion-color-heading-3">
+                            <button type="button" class="flex items-center justify-between w-full p-6 gap-3"
+                                data-accordion-target="#accordion-color-body-3" aria-expanded="false"
+                                aria-controls="accordion-color-body-3">
+                                <span class="font-semibold text-xl text-left">
+                                    Байр түрээслэхэд ямар шаардлага тавих вэ?
+                                </span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" aria-hidden="true" viewBox="0 0 36 36"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.386597" y="0.642578" width="34.971" height="34.971" rx="17.4855"
+                                        fill="black" />
+                                    <path d="M27.0312 13.5483L17.8721 22.7074L8.71303 13.5483" stroke="white"
+                                        stroke-width="3.33057" />
+                                </svg>
+
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+                            <div class="px-6 pb-6">
+                                <p class="mb-2 text-justify border-t pt-3 border-slate-500">
+                                    18 нас хүрсэн, хугацаа хэтэрсэн зээлгүй байх, зээлийн үлдэгдэлтэй бол ангилал нь
+                                    хэвийн байх, тодорхойлж болох мөнгөн орлоготой байх.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl mb-5">
+                        <h2 id="accordion-color-heading-4">
+                            <button type="button" class="flex items-center justify-between w-full p-6 gap-3"
+                                data-accordion-target="#accordion-color-body-4" aria-expanded="false"
+                                aria-controls="accordion-color-body-4">
+                                <span class="font-semibold text-xl text-left">
+                                    Байраа даатгуулахад надаас төлбөр гарах уу?
+                                </span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" aria-hidden="true" viewBox="0 0 36 36"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.386597" y="0.642578" width="34.971" height="34.971" rx="17.4855"
+                                        fill="black" />
+                                    <path d="M27.0312 13.5483L17.8721 22.7074L8.71303 13.5483" stroke="white"
+                                        stroke-width="3.33057" />
+                                </svg>
+
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+                            <div class="px-6 pb-6">
+                                <p class="mb-2 text-justify border-t pt-3 border-slate-500">
+                                    Бид таны байрыг үнэ төлбөргүй бүрэн даатгана.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl mb-5">
+                        <h2 id="accordion-color-heading-5">
+                            <button type="button" class="flex items-center justify-between w-full p-6 gap-3"
+                                data-accordion-target="#accordion-color-body-5" aria-expanded="false"
+                                aria-controls="accordion-color-body-5">
+                                <span class="font-semibold text-xl text-left">
+                                    Үйлчилгээний хураамжаас өөр нэмэлт хүү, хураамж байгаа юу?
+                                </span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" aria-hidden="true" viewBox="0 0 36 36"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.386597" y="0.642578" width="34.971" height="34.971" rx="17.4855"
+                                        fill="black" />
+                                    <path d="M27.0312 13.5483L17.8721 22.7074L8.71303 13.5483" stroke="white"
+                                        stroke-width="3.33057" />
+                                </svg>
+
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
+                            <div class="px-6 pb-6">
+                                <p class="mb-2 text-justify border-t pt-3 border-slate-500">
+                                    Rentpay нь нэг удаагийн үйлчилгээний хураамжаас өөр хураамж байхгүй.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="accordion-color2" data-accordion="collapse"
+                    data-active-classes="text-violet-700 bg-white rounded-2xl"
+                    data-inactive-classes="bg-white rounded-2xl">
+
+                    <div class="bg-white rounded-3xl mb-5">
+                        <h2 id="accordion-color2-heading-1">
+                            <button type="button" class="flex items-center justify-between w-full p-6 gap-3"
+                                data-accordion-target="#accordion-color2-body-1" aria-expanded="false"
+                                aria-controls="accordion-color2-body-1">
+                                <span class="font-semibold text-xl text-left">
+                                    Хэрхэн байраа түрээслүүлэх вэ?
+                                </span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" aria-hidden="true" viewBox="0 0 36 36"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.386597" y="0.642578" width="34.971" height="34.971" rx="17.4855"
+                                        fill="black" />
+                                    <path d="M27.0312 13.5483L17.8721 22.7074L8.71303 13.5483" stroke="white"
+                                        stroke-width="3.33057" />
+                                </svg>
+
+                            </button>
+                        </h2>
+                        <div id="accordion-color2-body-1" class="hidden" aria-labelledby="accordion-color2-heading-1">
+                            <div class="px-6 pb-6">
+                                <p class="mb-2 text-justify border-t pt-3 border-slate-500">
+                                    Та rentpay гар утасны аппликэйшнг татан авч, өөрийн тогтмол ашигладаг утасны
+                                    дугаараар бүртгүүлэн, байрны мэдээллээ оруулан, түрээслэх хүсэлт илгээнэ.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl mb-5">
+                        <h2 id="accordion-color2-heading-2">
+                            <button type="button" class="flex items-center justify-between w-full p-6 gap-3"
+                                data-accordion-target="#accordion-color2-body-2" aria-expanded="false"
+                                aria-controls="accordion-color2-body-2">
+                                <span class="font-semibold text-xl text-left">
+                                    Байр түрээслэхэд барьцаа төлбөртэй юу?
+                                </span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" aria-hidden="true" viewBox="0 0 36 36"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.386597" y="0.642578" width="34.971" height="34.971" rx="17.4855"
+                                        fill="black" />
+                                    <path d="M27.0312 13.5483L17.8721 22.7074L8.71303 13.5483" stroke="white"
+                                        stroke-width="3.33057" />
+                                </svg>
+
+                            </button>
+                        </h2>
+                        <div id="accordion-color2-body-2" class="hidden" aria-labelledby="accordion-color2-heading-2">
+                            <div class="px-6 pb-6">
+                                <p class="mb-2 text-justify border-t pt-3 border-slate-500">
+                                    Тийм , та нэг сарын түрээсийн төлбөр дундын дансанд байршуулах бөгөөд түрээсийн
+                                    гэрээ дуусах үед буцаан авах боломжтой.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl mb-5">
+                        <h2 id="accordion-color2-heading-3">
+                            <button type="button" class="flex items-center justify-between w-full p-6 gap-3"
+                                data-accordion-target="#accordion-color2-body-3" aria-expanded="false"
+                                aria-controls="accordion-color2-body-3">
+                                <span class="font-semibold text-xl text-left">
+                                    Миний орлого нотлогдохгүй бол яах вэ?
+                                </span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" aria-hidden="true" viewBox="0 0 36 36"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.386597" y="0.642578" width="34.971" height="34.971" rx="17.4855"
+                                        fill="black" />
+                                    <path d="M27.0312 13.5483L17.8721 22.7074L8.71303 13.5483" stroke="white"
+                                        stroke-width="3.33057" />
+                                </svg>
+
+                            </button>
+                        </h2>
+                        <div id="accordion-color2-body-3" class="hidden" aria-labelledby="accordion-color2-heading-3">
+                            <div class="px-6 pb-6">
+                                <p class="mb-2 text-justify border-t pt-3 border-slate-500">
+                                    Таны орлого зарлагын харьцаа нь нотлогдохгүй бол та гэр бүлийн нэг гишүүнээ,
+                                    эсвэл хамтран түрээслэгчээ нэмж орлогоо дахин баталгаажуулах боломжтой.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl mb-5">
+                        <h2 id="accordion-color2-heading-4">
+                            <button type="button" class="flex items-center justify-between w-full p-6 gap-3"
+                                data-accordion-target="#accordion-color2-body-4" aria-expanded="false"
+                                aria-controls="accordion-color2-body-4">
+                                <span class="font-semibold text-xl text-left">
+                                    Түрээсийн хугацаа хэтэрсэн тохиолдолд яах вэ ?
+                                </span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" aria-hidden="true" viewBox="0 0 36 36"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.386597" y="0.642578" width="34.971" height="34.971" rx="17.4855"
+                                        fill="black" />
+                                    <path d="M27.0312 13.5483L17.8721 22.7074L8.71303 13.5483" stroke="white"
+                                        stroke-width="3.33057" />
+                                </svg>
+
+                            </button>
+                        </h2>
+                        <div id="accordion-color2-body-4" class="hidden" aria-labelledby="accordion-color2-heading-4">
+                            <div class="px-6 pb-6">
+                                <p class="mb-2 text-justify border-t pt-3 border-slate-500">
+                                    Та түрээсийн төлбөрөө хугацаанд нь төлөөгүй тохиолдолд хугацаа хэтрүүлсэн хоног
+                                    тутам төлбөл зохих дүнгээс алданги тооцон бодно.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl mb-5">
+                        <h2 id="accordion-color2-heading-5">
+                            <button type="button" class="flex items-center justify-between w-full p-6 gap-3"
+                                data-accordion-target="#accordion-color2-body-5" aria-expanded="false"
+                                aria-controls="accordion-color2-body-5">
+                                <span class="font-semibold text-xl text-left">
+                                    Төлбөрийн хугацааг надад сануулах уу?
+                                </span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" aria-hidden="true" viewBox="0 0 36 36"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.386597" y="0.642578" width="34.971" height="34.971" rx="17.4855"
+                                        fill="black" />
+                                    <path d="M27.0312 13.5483L17.8721 22.7074L8.71303 13.5483" stroke="white"
+                                        stroke-width="3.33057" />
+                                </svg>
+
+                            </button>
+                        </h2>
+                        <div id="accordion-color2-body-5" class="hidden" aria-labelledby="accordion-color2-heading-5">
+                            <div class="px-6 pb-6">
+                                <p class="mb-2 text-justify border-t pt-3 border-slate-500">
+                                    Тийм, танд мессеж болон rentpay аппликэйшнд сануулга ирэх болно.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-video" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+
+        <div class="relative p-4 w-full max-w-3xl max-h-full">
+
+            <button type="button"
+                class="absolute z-50 top-0 right-0 bg-gray-200 text-gray-900 hover:bg-white rounded-full text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                onclick="modalHide();">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+            </button>
+
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-2xl shadow">
+                <video id="video-tag" class="w-full h-auto max-w-full rounded-xl" controls>
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    $(".help-video").hover(
+        function () {
+            $('p', this).addClass("opacity-50");
+            $('img', this).removeClass("opacity-40 -z-8");
+        },
+        function () {
+            $('p', this).removeClass("opacity-50");
+            $('img', this).addClass("opacity-40 -z-8");
+        }
+    );
+
+    const $targetEl = document.getElementById('modal-video');
+
+    // options with default values
+    const options = {
+        closable: true,
+        onHide: () => {
+            videoStop();
+        },
+        onShow: () => {
+
+        },
+        onToggle: () => {
+
+        },
+    };
+
+    // instance options object
+    const instanceOptions = {
+        id: 'modal-video',
+        override: true
+    };
+
+
+    /*
+     * $targetEl: required
+     * options: optional
+     */
+    const modal = new Modal($targetEl, options, instanceOptions);
+
+    function modalShow($vid) {
+        $('source', '#video-tag').attr("src", "pics/" + $vid + ".mp4");
+        modal.show();
+        document.getElementById("video-tag").load();
+        document.getElementById("video-tag").play();
+    }
+
+    function modalHide() {
+        videoStop();
+        modal.hide();
+    }
+
+    function videoStop() {
+        document.getElementById("video-tag").pause();
+    }
+
+</script>
+
+</html>
